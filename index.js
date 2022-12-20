@@ -22,12 +22,12 @@ playPauseButton.addEventListener('click', () => isPlaying ? pauseVideo() : playV
 volumeProgressContainer.addEventListener('click', changeVolume);
 video.addEventListener('timeupdate', changeVideoProgress);
 video.addEventListener('ended', pauseVideo);
-selectBox.addEventListener('change', changevideoSpeed)
-fullScreenButton.addEventListener('click', toggleFullscreen)
-pictureInPictureButton.addEventListener('click', togglePictureInPicture)
-nextButton.addEventListener('dblclick', seekTo10SecondLater)
-prevButton.addEventListener('dblclick',seekTo10SecondPrev)
-progressDurationContainer.addEventListener('click', jumpIntoPosition)
+selectBox.addEventListener('change', changevideoSpeed);
+fullScreenButton.addEventListener('click', toggleFullscreen);
+pictureInPictureButton.addEventListener('click', togglePictureInPicture);
+nextButton.addEventListener('dblclick', seekTo10SecondLater);
+prevButton.addEventListener('dblclick',seekTo10SecondPrev);
+progressDurationContainer.addEventListener('click', jumpIntoPosition);
 
 function changevideoSpeed() {
     event.stopPropagation();
